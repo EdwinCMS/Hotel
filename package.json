@@ -2,9 +2,10 @@
   "name": "guia-hoteles",
   "version": "1.0.0",
   "description": "Nuestro primer proyecto NodeJS",
-  "main": "index.html",
+   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+     "dev": "lite-server",
+     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -12,5 +13,8 @@
   },
   "author": "Edwin Moreno",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/EdwinCMS/guia-hoteles#readme"
+  "homepage": "https://bitbucket.org/EdwinCMS/guia-hoteles#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
 }
