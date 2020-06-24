@@ -2,10 +2,10 @@
   "name": "guia-hoteles",
   "version": "1.0.0",
   "description": "Nuestro primer proyecto NodeJS",
-   "main": "index.html",
+  "main": "index.html",
   "scripts": {
-     "dev": "lite-server",
-     "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,11 @@
   "homepage": "https://bitbucket.org/EdwinCMS/guia-hoteles#readme",
   "devDependencies": {
     "lite-server": "^2.5.4"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.4.2",
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
   }
 }
