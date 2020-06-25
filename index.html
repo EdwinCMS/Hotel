@@ -8,12 +8,127 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
 
     <title>Hello, world!</title>
 </head>
 
 <body>
-    <h1>Hello, world!</h1>
+    <div class="jumbotron">
+        <h1 class="display-4">Hoteles</h1>
+    </div>
+    <div id="div" class="container">
+        <div class="d-flex">
+            <div class="col-md-4">
+                <h3>¿Como funciona? </h3>
+                <p>Busca los hoteles de acuerdo a tu preferencia</p>
+            </div>
+            <div class="col-md-4">
+                <h3>¿Donde puedo reservar?</h3>
+                <p>Eliga la ciudad que te interese y luego realiza la reserva con tus datos</p>
+            </div>
+            <div class="col-md-4">
+                <h3>¿Como pago?</h3>
+                <p>Utiliza tu tarjeta favorita</p>
+            </div>
+        </div>
+        <!--flex-wrap sirve para qeu los elementos ocupensolo una inea,
+        d-flex se va atratar a la division como flex-->
+        <!--flex-row-reverse indica que la fia va iniciar de derecha a izaquierda-->
+        <div class="col-md-12 d-flex flex-wrap flex-row-reverse">
+            <div class="col-md-3 card-hotel d-flex flex-column justify-content-between">
+                <div>
+                    <h3>Hotel Barcelona</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam porro magnam at! </p>
+                </div>
+                <div>
+                    <button class="btn btn-primary btn-reserva">Reservar</button>
+                </div>
+            </div>
+            <div class="col-md-3 card-hotel d-flex flex-column justify-content-between">
+                <div>
+                    <h3>Hotel Buenos Aires</h3>
+                </div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur obcaecati </p>
+                <div>
+                    <button class="btn btn-primary card-hotel btn-reserva">Reservar</button>
+                </div>
+            </div>
+            <div class="col-md-3 card-hotel d-flex flex-column justify-content-between">
+                <div>
+                    <h3>Hotel Lima</h3>
+                    <p>provident quidem quod itaque! Quo adipisci architecto culpa unde deserunt nostrum cupiditate, optio ducimus, fuga quibusdam dignissimos ab libero recusandae.</p>
+                </div>
+                <div>
+                    <button class="btn btn-primary btn-reserva">Reserva</button>
+                </div>
+            </div>
+            <div class="col-md-3 card-hotel d-flex flex-column justify-content-between">
+                <div>
+                    <h3>Hotel Rio de Janeiro</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non veniam autem perspiciatis </p>
+                </div>
+                <div>
+                    <button class="btn btn-primary btn-reserva">Reservar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-12 d-flex flex-wrap flex-row-reverse">
+            <div class="col-md-3 card-hotel d-flex flex-column justify-content-between">
+                <div>
+                    <h3>Hotel Barcelona</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam porro magnam at! </p>
+                </div>
+                <div>
+                    <button class="btn btn-warning card-hotel btn-reserva">Reservar</button>
+                </div>
+            </div>
+            <div class="col-md-3 card-hotel d-flex flex-column justify-content-between">
+                <div>
+                    <h3>Hotel Buenos Aires</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur obcaecati </p>
+                </div>
+                <div>
+                    <button class="btn btn-warning card-hotel btn-reserva">Reservar</button>
+                </div>
+            </div>
+            <div class="col-md-3 card-hotel d-flex flex-column justify-content-between">
+                <div>
+                    <h3>Hotel Lima</h3>
+                    <p>provident quidem quod itaque! Quo adipisci architecto culpa unde deserunt nostrum cupiditate, optio ducimus, fuga quibusdam dignissimos ab libero recusandae.</p>
+                </div>
+                <div>
+                    <button class="btn btn-warning card-hotel btn-reserva">Reservar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="row">
+            <div class="col-md-4 d-flex flex-column">
+                <a href="http://www.facebook.com">Facebook</a>
+                <a href="http://www.twitter.com">Twitter</a>
+                <a href="http://www.instagram.com">Instagram</a>
+                <a href="http://www.google.com">Google+</a>
+            </div>
+            <div class="col-md-4">
+                <addres>
+                    <h3>Oficina Central</h3>
+                    <p>Soacha, Cundinamarca, Colombia </p>
+                    <p>+5357638992>+5357638992 </p>
+                    <p>edwinc@hotmail.com</p>
+                </addres>
+            </div>
+            <div class="col-md-4 d-flex flex-column align-items-end">
+                <a href="#">Nosotros</a>
+                <a href="#">Terminos y Condiciobes</a>
+                <a href="#">Contacto</a>
+                <a href="#">Precios</a>
+            </div>
+        </div>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
