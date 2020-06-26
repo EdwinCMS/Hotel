@@ -14,10 +14,49 @@
 </head>
 
 <body>
+    <!--navbar-expand-md indica el tamaño en que se va a mostrar navbar galleta-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <!--fixed-top para que la barra quede fija-->
+        <a class="navbar-brand" href="#">Hoteles</a>
+        <!--data-toggle como va ser el comportamiento, target indica quien va a activar la accion-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--collapse indica que es colapsable y se va a ocultar al reducir el tamaño de pantalla-->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Precios</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Terminos y Condiciones</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
     <div class="jumbotron">
         <h1 class="display-4">Hoteles</h1>
     </div>
+
+
     <div id="div" class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">Home</li>
+            </ol>
+        </nav>
+
         <div class="d-flex">
             <div class="col-md-4">
                 <h3>¿Como funciona? </h3>
@@ -32,9 +71,10 @@
                 <p>Utiliza tu tarjeta favorita</p>
             </div>
         </div>
-        <!--flex-wrap sirve para qeu los elementos ocupensolo una inea,
-        d-flex se va atratar a la division como flex-->
-        <!--flex-row-reverse indica que la fia va iniciar de derecha a izaquierda-->
+        <hr>
+        <!--flex-wrap sirve para que los elementos ocupen solo una linea,
+        d-flex trata la division como flex-->
+        <!--flex-row-reverse inicia la fila de derecha a izaquierda-->
         <div class="col-md-12 d-flex flex-wrap flex-row-reverse">
             <div class="col-md-3 card-hotel d-flex flex-column justify-content-between">
                 <div>
@@ -48,10 +88,10 @@
             <div class="col-md-3 card-hotel d-flex flex-column justify-content-between">
                 <div>
                     <h3>Hotel Buenos Aires</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur obcaecati amet consectetur adipisicing elit. </p>
                 </div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur obcaecati </p>
                 <div>
-                    <button class="btn btn-primary card-hotel btn-reserva">Reservar</button>
+                    <button class="btn btn-primary btn-reserva">Reservar</button>
                 </div>
             </div>
             <div class="col-md-3 card-hotel d-flex flex-column justify-content-between">
@@ -73,24 +113,24 @@
                 </div>
             </div>
         </div>
-
-        <div class="col-md-12 d-flex flex-wrap flex-row-reverse">
+        <!--justify-content-md-center  centra los elementos-->
+        <div class="col-md-12 d-flex flex-wrap flex-row-reverse justify-content-md-center">
             <div class="col-md-3 card-hotel d-flex flex-column justify-content-between">
                 <div>
                     <h3>Hotel Barcelona</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam porro magnam at! </p>
                 </div>
                 <div>
-                    <button class="btn btn-warning card-hotel btn-reserva">Reservar</button>
+                    <button class="btn btn-warning btn-reserva">Reservar</button>
                 </div>
             </div>
             <div class="col-md-3 card-hotel d-flex flex-column justify-content-between">
                 <div>
                     <h3>Hotel Buenos Aires</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur obcaecati </p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur obcaecati amet consectetur adipisicing elit.amet consectetur adipisicing elit. </p>
                 </div>
                 <div>
-                    <button class="btn btn-warning card-hotel btn-reserva">Reservar</button>
+                    <button class="btn btn-warning btn-reserva">Reservar</button>
                 </div>
             </div>
             <div class="col-md-3 card-hotel d-flex flex-column justify-content-between">
@@ -99,7 +139,7 @@
                     <p>provident quidem quod itaque! Quo adipisci architecto culpa unde deserunt nostrum cupiditate, optio ducimus, fuga quibusdam dignissimos ab libero recusandae.</p>
                 </div>
                 <div>
-                    <button class="btn btn-warning card-hotel btn-reserva">Reservar</button>
+                    <button class="btn btn-warning btn-reserva">Reservar</button>
                 </div>
             </div>
         </div>
