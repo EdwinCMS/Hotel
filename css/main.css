@@ -11,6 +11,10 @@ footer {
     margin-top: 1em;
 }
 
+.center {
+    text-align: center;
+}
+
 .card-hotel {
     /* 1 crecimiento, indica flex-grow
     el segundo parametro indica el ancho*/
@@ -20,4 +24,8 @@ footer {
 
 .btn-reserva {
     width: 100%;
+}
+
+.icons-general {
+    padding-right: 10px;
 }
