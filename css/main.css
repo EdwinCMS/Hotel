@@ -19,13 +19,20 @@ footer {
     /* 1 crecimiento, indica flex-grow
     el segundo parametro indica el ancho*/
     flex: 1 150px;
-    padding: 2px 5px 2px 5px;
+    /*padding: 2px 5px 2px 5px;*/
+    margin-top: 1em;
 }
 
 .btn-reserva {
     width: 100%;
+    border-radius: 0;
 }
 
 .icons-general {
     padding-right: 10px;
+}
+
+.card-img {
+    width: 20px;
+    height: 20px;
 }

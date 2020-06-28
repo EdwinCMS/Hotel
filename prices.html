@@ -9,6 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="css/main.css">
 
     <title>Hello, world!</title>
@@ -57,6 +58,7 @@
                 <li class="breadcrumb-item active" aria-current="page">Precios</li>
             </ol>
         </nav>
+
         <div class="table-responsive">
             <table class="table table-striped">
                 <thead class="thead-dark">
@@ -119,37 +121,49 @@
                 </tbody>
             </table>
         </div>
+    </div>
 
-        <footer>
-            <div class="row">
-                <div class="col-md-4 d-flex flex-column">
-                    <a href="http://www.facebook.com">Facebook</a>
-                    <a href="http://www.twitter.com">Twitter</a>
-                    <a href="http://www.instagram.com">Instagram</a>
-                    <a href="http://www.google.com">Google+</a>
-                </div>
-                <div class="col-md-4 ">
-                    <address>
+    <div class="d-flex justify-content-center">
+        <div class="card" style="width: 18rem;">
+            <div class="card-header" style="background-color:blue; color: white;">Tarjetas aceptadas</div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Tarjeta Basica</li>
+                <li class="list-group-item">Tarjeta VIP</li>
+                <li class="list-group-item">Tarjeta Black</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <div class="row">
+            <div class="col-md-4 d-flex flex-column">
+                <a href="http://www.facebook.com"><span class="fab fa-facebook-square"></span> Facebook</a>
+                <a href="http://www.twitter.com"><span class="fab fa-twitter-square"></span> Twitter</a>
+                <a href="http://www.instagram.com"><span class="fab fa-instagram-square"></span> Instagram</a>
+                <a href="http://www.google.com"><span class="fab fa-google-plus-square"></span> Google+</a>
+            </div>
+            <div class="col-md-4 ">
+                <address>
                     <h3 class="center">Oficina Central</h3>
                     <p><span class="oi oi-home icons-general"></span>Soacha, Cundinamarca, Colombia </p>
                     <p><span class="oi oi-phone icons-general"></span>+5357638992 </p>
                     <p><span class="oi oi-inbox icons-general"></span>edwinc@hotmail.com</p>
                 </address>
-                </div>
-                <div class="col-md-4 d-flex flex-column align-items-end">
-                    <a href="#"><span class="oi oi-people icons-general"></span>Nosotros</a>
-                    <a href="#"><span class="oi oi-document icons-general"></span>Terminos y Condiciobes</a>
-                    <a href="#"><span class="oi oi-list-rich icons-general"></span>Contacto</a>
-                    <a href="#"><span class="oi oi-dollar icons-general"></span>Precios</a>
-                </div>
             </div>
-        </footer>
+            <div class="col-md-4 d-flex flex-column align-items-end">
+                <a href="#"><span class="oi oi-people icons-general"></span>Nosotros</a>
+                <a href="#"><span class="oi oi-document icons-general"></span>Terminos y Condiciobes</a>
+                <a href="#"><span class="oi oi-list-rich icons-general"></span>Contacto</a>
+                <a href="#"><span class="oi oi-dollar icons-general"></span>Precios</a>
+            </div>
+        </div>
+    </footer>
 
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="node_modules/jquery/dist/jquery.min.js"></script>
-        <script src="node_modules/popper.js/dist/popper.min.js"></script>
-        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>

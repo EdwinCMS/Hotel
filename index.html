@@ -9,6 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="css/main.css">
 
     <title>Hello, world!</title>
@@ -76,10 +77,12 @@
         <!--flex-wrap sirve para que los elementos ocupen solo una linea,
         d-flex trata la division como flex-->
         <!--flex-row-reverse inicia la fila de derecha a izaquierda-->
-        <div class="col-md-12 d-flex flex-wrap flex-row-reverse">
-            <div class="col-md-3 card-hotel d-flex flex-column justify-content-between">
-                <div>
-                    <h3>Hotel Barcelona</h3>
+        <div class="d-flex flex-wrap flex-row-reverse">
+            <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+                <div class="card-body ">
+
+                    <h5 class="card-title">Hotel Barcelona</h5>
+                    <h6 class="card-subtitle">España</h6>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam porro magnam at! </p>
                 </div>
                 <div>
@@ -88,27 +91,30 @@
                     </button>
                 </div>
             </div>
-            <div class="col-md-3 card-hotel d-flex flex-column justify-content-between">
-                <div>
-                    <h3>Hotel Buenos Aires</h3>
+            <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+                <div class="card-body ">
+                    <h5 class="card-title">Hotel Buenos Aires</h5>
+                    <h6 class="card-subtitle">Argentina</h6>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur obcaecati amet consectetur adipisicing elit. </p>
                 </div>
                 <div>
                     <button class="btn btn-primary btn-reserva"><span class="oi oi-plus icons-general"></span>Reservar</button>
                 </div>
             </div>
-            <div class="col-md-3 card-hotel d-flex flex-column justify-content-between">
-                <div>
-                    <h3>Hotel Lima</h3>
+            <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+                <div class="card-body ">
+                    <h5 class="card-title">Hotel Lima</h5>
+                    <h6 class="card-subtitle">Peru</h6>
                     <p>provident quidem quod itaque! Quo adipisci architecto culpa unde deserunt nostrum cupiditate, optio ducimus, fuga quibusdam dignissimos ab libero recusandae.</p>
                 </div>
                 <div>
                     <button class="btn btn-primary btn-reserva"><span class="oi oi-plus icons-general"></span>Reserva</button>
                 </div>
             </div>
-            <div class="col-md-3 card-hotel d-flex flex-column justify-content-between">
-                <div>
-                    <h3>Hotel Rio de Janeiro</h3>
+            <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+                <div class="card-body ">
+                    <h5 class="card-title">Hotel Rio de Janeiro</h5>
+                    <h6 class="card-subtitle">Brasil</h6>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non veniam autem perspiciatis </p>
                 </div>
                 <div>
@@ -118,27 +124,46 @@
         </div>
         <!--justify-content-md-center  centra los elementos-->
         <div class="d-flex flex-wrap flex-row-reverse justify-content-md-center">
-            <div class="col-md-3 card-hotel d-flex flex-column justify-content-between">
-                <div>
-                    <h3>Hotel Barcelona</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam porro magnam at! </p>
+            <!-- ml-2(px) distacia entre elementos, la 'm' representa margen, hay m,p...-->
+            <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+                <div class="card-header">
+                    <span class="oi oi-star"></span>
+                    <span class="oi oi-star"></span>
+                    <span class="oi oi-star"></span>
+                    <span class="oi oi-star"></span>
+                    <span class="oi oi-star"></span> España
+                </div>
+                <div class="card-body ">
+                    <h5 class="card-title">Hotel Barcelona</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam porro magnam at! </p>
                 </div>
                 <div>
                     <button class="btn btn-warning btn-reserva"><span class="oi oi-plus icons-general"></span>Reservar</button>
                 </div>
             </div>
-            <div class="col-md-3 card-hotel d-flex flex-column justify-content-between">
-                <div>
-                    <h3>Hotel Buenos Aires</h3>
+            <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+                <div class="card-header">
+                    <span class="oi oi-star"></span>
+                    <span class="oi oi-star"></span>
+                    <span class="oi oi-star"></span> Argentina
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Hotel Buenos Aires</h5>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur obcaecati amet consectetur adipisicing elit.amet consectetur adipisicing elit. </p>
                 </div>
                 <div>
                     <button class="btn btn-warning btn-reserva"><span class="oi oi-plus icons-general"></span>Reservar</button>
                 </div>
             </div>
-            <div class="col-md-3 card-hotel d-flex flex-column justify-content-between">
-                <div>
-                    <h3>Hotel Lima</h3>
+            <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+                <div class="card-header">
+                    <span class="oi oi-star"></span>
+                    <span class="oi oi-star"></span>
+                    <span class="oi oi-star"></span>
+                    <span class="oi oi-star"></span> Peru
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Hotel Lima</h5>
                     <p>provident quidem quod itaque! Quo adipisci architecto culpa unde deserunt nostrum cupiditate, optio ducimus, fuga quibusdam dignissimos ab libero recusandae.</p>
                 </div>
                 <div>
@@ -151,10 +176,10 @@
     <footer>
         <div class="row">
             <div class="col-md-4 d-flex flex-column">
-                <a href="http://www.facebook.com">Facebook</a>
-                <a href="http://www.twitter.com">Twitter</a>
-                <a href="http://www.instagram.com">Instagram</a>
-                <a href="http://www.google.com">Google+</a>
+                <a href="http://www.facebook.com"><span class="fab fa-facebook-square"></span> Facebook</a>
+                <a href="http://www.twitter.com"><span class="fab fa-twitter-square"></span> Twitter</a>
+                <a href="http://www.instagram.com"><span class="fab fa-instagram-square"></span> Instagram</a>
+                <a href="http://www.google.com"><span class="fab fa-google-plus-square"></span> Google+</a>
             </div>
             <div class="col-md-4 ">
                 <address>
