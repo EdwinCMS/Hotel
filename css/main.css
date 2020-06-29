@@ -36,3 +36,11 @@ footer {
     width: 20px;
     height: 20px;
 }
+
+#banner {
+    margin-bottom: 1em;
+}
+
+#jumbo {
+    margin-bottom: 0em;
+}
