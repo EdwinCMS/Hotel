@@ -1,1 +1,2 @@
-Inicio del proyecto guia de hoteles
+Usar
+npm install
