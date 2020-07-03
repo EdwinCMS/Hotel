@@ -48,3 +48,9 @@ footer {
 .tab-content {
     margin-top: 2em;
 }
+
+#hola {
+    background-color: white;
+    color: lawngreen;
+    border-color: lawngreen;
+}

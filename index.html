@@ -116,7 +116,8 @@
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur obcaecati amet consectetur adipisicing elit. </p>
                 </div>
                 <div>
-                    <button class="btn btn-primary btn-reserva"><span class="oi oi-plus icons-general"></span>Reservar</button>
+                    <button class="btn btn-primary btn-reserva"><span
+                            class="oi oi-plus icons-general"></span>Reservar</button>
                 </div>
             </div>
             <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
@@ -127,7 +128,8 @@
                     <p>provident quidem quod itaque! Quo adipisci architecto culpa unde deserunt nostrum cupiditate, optio ducimus, fuga quibusdam dignissimos ab libero recusandae.</p>
                 </div>
                 <div>
-                    <button class="btn btn-primary btn-reserva"><span class="oi oi-plus icons-general"></span>Reserva</button>
+                    <button class="btn btn-primary btn-reserva"><span
+                            class="oi oi-plus icons-general"></span>Reserva</button>
                 </div>
             </div>
             <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
@@ -138,7 +140,8 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non veniam autem perspiciatis </p>
                 </div>
                 <div>
-                    <button class="btn btn-primary btn-reserva"><span class="oi oi-plus icons-general"></span>Reservar</button>
+                    <button class="btn btn-primary btn-reserva"><span
+                            class="oi oi-plus icons-general"></span>Reservar</button>
                 </div>
             </div>
         </div>
@@ -156,10 +159,12 @@
                 <img src="images/5s_FRS330521.jpg" class="card-img-top" alt="">
                 <div class="card-body ">
                     <h5 class="card-title">Hotel Barcelona</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam porro magnam at! </p>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam porro magnam at!
+                    </p>
                 </div>
                 <div>
-                    <button class="btn btn-warning btn-reserva"><span class="oi oi-plus icons-general"></span>Reservar</button>
+                    <button class="btn btn-warning btn-reserva"><span
+                            class="oi oi-plus icons-general"></span>Reservar</button>
                 </div>
             </div>
             <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
@@ -174,7 +179,8 @@
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur obcaecati amet consectetur adipisicing elit.amet consectetur adipisicing elit. </p>
                 </div>
                 <div>
-                    <button class="btn btn-warning btn-reserva"><span class="oi oi-plus icons-general"></span>Reservar</button>
+                    <button class="btn btn-warning btn-reserva"><span
+                            class="oi oi-plus icons-general"></span>Reservar</button>
                 </div>
             </div>
             <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
@@ -190,42 +196,90 @@
                     <p>provident quidem quod itaque! Quo adipisci architecto culpa unde deserunt nostrum cupiditate, optio ducimus, fuga quibusdam dignissimos ab libero recusandae.</p>
                 </div>
                 <div>
-                    <button class="btn btn-warning btn-reserva"><span class="oi oi-plus icons-general"></span>Reservar</button>
+                    <button class="btn btn-warning btn-reserva"><span
+                            class="oi oi-plus icons-general"></span>Reservar</button>
                 </div>
             </div>
         </div>
-    </div>
+        <br><br>
 
-    <footer>
-        <div class="row">
-            <div class="col-md-4 d-flex flex-column">
-                <a href="http://www.facebook.com"><span class="fab fa-facebook-square"></span> Facebook</a>
-                <a href="http://www.twitter.com"><span class="fab fa-twitter-square"></span> Twitter</a>
-                <a href="http://www.instagram.com"><span class="fab fa-instagram-square"></span> Instagram</a>
-                <a href="http://www.google.com"><span class="fab fa-google-plus-square"></span> Google+</a>
+        <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+            <!--card-img-top  ajusta la imgen arriba de la tarjeta-->
+
+            <div class="card-body ">
+                <h5 class="card-title">Hotel Barcelona</h5>
+                <h6 class="card-subtitle">España</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam porro magnam at! </p>
+                <!-- Button trigger modal -->
+                <button id="hola" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Contacto</button>
             </div>
-            <div class="col-md-4 ">
-                <address>
-                    <h3 class="center">Oficina Central</h3>
-                    <p><span class="oi oi-home icons-general"></span>Soacha, Cundinamarca, Colombia </p>
-                    <p><span class="oi oi-phone icons-general"></span>+5357638992 </p>
-                    <p><span class="oi oi-inbox icons-general"></span>edwinc@hotmail.com</p>
-                </address>
-            </div>
-            <div class="col-md-4 d-flex flex-column align-items-end">
-                <a href="#"><span class="oi oi-people icons-general"></span>Nosotros</a>
-                <a href="#"><span class="oi oi-document icons-general"></span>Terminos y Condiciobes</a>
-                <a href="#"><span class="oi oi-list-rich icons-general"></span>Contacto</a>
-                <a href="#"><span class="oi oi-dollar icons-general"></span>Precios</a>
+
+            <div>
+                <button class="btn btn-primary btn-reserva">
+                    <span class="oi oi-plus icons-general"></span>Reservar
+                </button>
             </div>
         </div>
-    </footer>
+        <!--Modal-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Solicitud de contacto</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">E-mail:</label>
+                                <input type="email" class="form-control" id="recipient-name" placeholder="email@algo.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="message-text" class="col-form-label">Mensaje:</label>
+                                <textarea class="form-control" id="message-text" target='_blank'></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <footer>
+            <div class="row">
+                <div class="col-md-4 d-flex flex-column">
+                    <a href="http://www.facebook.com"><span class="fab fa-facebook-square"></span> Facebook</a>
+                    <a href="http://www.twitter.com"><span class="fab fa-twitter-square"></span> Twitter</a>
+                    <a href="http://www.instagram.com"><span class="fab fa-instagram-square"></span> Instagram</a>
+                    <a href="http://www.google.com"><span class="fab fa-google-plus-square"></span> Google+</a>
+                </div>
+                <div class="col-md-4 ">
+                    <address>
+                        <h3 class="center">Oficina Central</h3>
+                        <p><span class="oi oi-home icons-general"></span>Soacha, Cundinamarca, Colombia </p>
+                        <p><span class="oi oi-phone icons-general"></span>+5357638992 </p>
+                        <p><span class="oi oi-inbox icons-general"></span>edwinc@hotmail.com</p>
+                    </address>
+                </div>
+                <div class="col-md-4 d-flex flex-column align-items-end">
+                    <a href="#"><span class="oi oi-people icons-general"></span>Nosotros</a>
+                    <a href="#"><span class="oi oi-document icons-general"></span>Terminos y Condiciobes</a>
+                    <a href="#"><span class="oi oi-list-rich icons-general"></span>Contacto</a>
+                    <a href="#"><span class="oi oi-dollar icons-general"></span>Precios</a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
