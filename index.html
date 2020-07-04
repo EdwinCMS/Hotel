@@ -45,7 +45,7 @@
             </ul>
         </div>
     </nav>
-    <!--MESAJE DE ALERTA-->
+
 
     <div class="jumbotron" id="jumbo">
         <h1 class="display-4"><span class="oi oi-clipboard icons-general"></span>Hoteles</h1>
@@ -98,7 +98,8 @@
                 <!--card-img-top  ajusta la imgen arriba de la tarjeta-->
                 <img src="images/1s_SAM_3971.JPG" class="card-img-top" alt="">
                 <div class="card-body ">
-                    <h5 class="card-title">Hotel Barcelona</h5>
+                    <!--Tooltip agregado---script al final-->
+                    <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reservas cuentan con clases de salsa gratis!">Hotel Barcelona</h5>
                     <h6 class="card-subtitle">España</h6>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam porro magnam at! </p>
                 </div>
@@ -215,7 +216,7 @@
             </div>
 
             <div>
-                <button class="btn btn-primary btn-reserva">
+                <button class="btn btn-primary btn-reserva" data-toggle="popover" data-title="Promociones" data-content="Consulta las promociones vigentes">
                     <span class="oi oi-plus icons-general"></span>Reservar
                 </button>
             </div>
@@ -275,11 +276,23 @@
             </div>
         </footer>
 
+
+
+
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="node_modules/jquery/dist/jquery.min.js"></script>
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+        <!---Script necesario para activar el tooltips, y darle formato al title-->>
+        <script>
+            //Tooltips
+            $(function() {
+                $('[data-toggle="tooltip"]').tooltip()
+                $('[data-toggle="popover"]').popover()
+            })
+        </script>
 </body>
 
 </html>
