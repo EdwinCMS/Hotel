@@ -131,8 +131,8 @@
         <hr>
         <!--------CARDS 1-------->
         <!--flex-wrap sirve para que los elementos ocupen solo una linea,
-        d-flex trata la division como flex-->
-        <!--flex-row-reverse inicia la fila de derecha a izaquierda-->
+        d-flex trata la division como flex
+        flex-row-reverse inicia la fila de derecha a izaquierda-->
         <div class="d-flex flex-wrap flex-row-reverse">
             <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
                 <!--card-img-top  ajusta la imgen arriba de la tarjeta-->
@@ -164,7 +164,8 @@
             <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
                 <img src="images/3s_1844932.jpg" class="card-img-top" alt="">
                 <div class="card-body ">
-                    <h5 class="card-title">Hotel Lima</h5>
+                    <!----uso de Badge ------>
+                    <h5 class="card-title">Hotel Lima<span class="badge badge-success">New</span></h5>
                     <h6 class="card-subtitle">Peru</h6>
                     <p>provident quidem quod itaque! Quo adipisci architecto culpa unde deserunt nostrum cupiditate, optio ducimus, fuga quibusdam dignissimos ab libero recusandae.</p>
                 </div>
@@ -201,7 +202,8 @@
                 </div>
 
                 <div class="card-body ">
-                    <h5 class="card-title">Hotel Rio de Janeiro</h5>
+                    <!----uso de Badge ------>
+                    <h5 class="card-title">Hotel Rio de Janeiro<span class="badge badge-success">New</span></h5>
                     <h6 class="card-subtitle">Brasil</h6>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non veniam autem perspiciatis </p>
                 </div>
@@ -260,6 +262,7 @@
                     <span class="oi oi-star"></span>
                     <span class="oi oi-star"></span>
                     <span class="oi oi-star"></span> Peru
+                    <span class="badge badge-pill badge-success">New</span>
                 </div>
                 <img src="images/7s_1285156.jpg" class="card-img-top" alt="">
                 <div class="card-body">
@@ -282,7 +285,7 @@
                     <h6 class="card-subtitle">España</h6>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam porro magnam at! </p>
                     <!-- Button trigger modal -->
-                    <button id="hola" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Contacto</button>
+                    <button id="btnModalContact" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Contacto</button>
                 </div>
 
                 <div>
@@ -366,6 +369,26 @@
                 })
                 $('#carouselRio').carousel({
                     interval: 3000
+                })
+                $('#exampleModal').on('show.bs.modal', function(e) {
+                    console.log('el modal contacto se esta mostrando')
+
+                    $('#btnModalContact').removeClass('btn-primary')
+                    $('#btnModalContact').addClass('btn-success')
+                    $('#btnModalContact').prop('disabled', true)
+                })
+                $('#exampleModal').on('shown.bs.modal', function(e) {
+                    console.log('el modal contacto se mostro')
+                })
+                $('#exampleModal').on('hide.bs.modal', function(e) {
+                    console.log('el modal contacto se esta ocultado')
+                })
+                $('#exampleModal').on('hidden.bs.modal', function(e) {
+                    console.log('el modal contacto se oculto')
+
+                    $('#btnModalContact').removeClass('btn-success')
+                    $('#btnModalContact').addClass('btn-primary')
+                    $('#btnModalContact').prop('disabled', false)
                 })
             })
             /*
