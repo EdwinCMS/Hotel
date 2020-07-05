@@ -1,14 +1,21 @@
+//VARIABLES
+@yellow: #a4ba36;
+//METODOS
+.margenes(@top:0px, @bottom:0px){
+  margin-top: @top;
+  margin-bottom: @bottom;
+}
+
+
 .jumbotron {
-  background-color: #eeff57;
+  background-color: @yellow;
   color: #202120;
-  margin-top: 3.5em;
-  margin-bottom: 0em; }
+  .margenes(3.5em, 0px);}
 
 footer {
   padding: 1em 1em 1em;
-  background-color: #eeff57;
-  margin-top: 1em;
-  margin-bottom: 0em; }
+  background-color: @yellow;
+  .margenes(1em, 0em); }
 
 .center {
   text-align: center; }
@@ -18,7 +25,7 @@ footer {
   el segundo parametro indica el ancho*/
   flex: 1 150px;
   /*padding: 2px 5px 2px 5px;*/
-  margin-top: 1em; }
+  .margenes(1em, 0em); }
 
 .btn-reserva {
   width: 100%;
@@ -32,17 +39,13 @@ footer {
   height: 20px; }
 
 #banner {
-  margin-top: 0em;
-  margin-bottom: 1em; }
-
+  .margenes(0em, 1em); }
 /*
 #jumbo {
-    @include margenes(0em, 0em);
-}
+  .margenes(0em, 0em); }
 */
 .tab-content {
-  margin-top: 2em;
-  margin-bottom: 0em; }
+  .margenes(2em, 0em); }
 
 /*
 #btnModalContact {
@@ -52,8 +55,7 @@ footer {
 }
 */
 #div {
-  margin-top: 1em;
-  margin-bottom: 0em; }
+  .margenes(1em, 0em); }
 
 .btn-nuevo {
   background-color: #b32d12;
