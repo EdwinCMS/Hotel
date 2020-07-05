@@ -1,0 +1,82 @@
+//VARIABLES
+$yellow: #eeff57;
+$red:#b32d12;
+$green:#27ba16;
+$black:#202120;
+//MIXIN
+@mixin margenes($top, $bottom) {
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+
+//////////////////////////////////////////////////
+.jumbotron {
+    background-color: $yellow;
+    color: $black;
+    @include margenes(3.5em, 0em);
+}
+
+footer {
+    padding: 1em 1em 1em;
+    background-color: $yellow;
+    @include margenes(1em, 0em);
+}
+
+.center {
+    text-align: center;
+}
+
+.card-hotel {
+    /* 1 crecimiento, indica flex-grow
+  el segundo parametro indica el ancho*/
+    flex: 1 150px;
+    /*padding: 2px 5px 2px 5px;*/
+    margin-top: 1em;
+}
+
+.btn-reserva {
+    width: 100%;
+    border-radius: 0;
+}
+
+.icons-general {
+    padding-right: 10px;
+}
+
+.card-img {
+    width: 20px;
+    height: 20px;
+}
+
+#banner {
+    @include margenes(0em, 1em);
+}
+
+#jumbo {
+    @include margenes(0em, 0em);
+}
+
+.tab-content {
+    @include margenes(2em, 0em);
+}
+
+
+/*
+#btnModalContact {
+  background-color: white;
+  color: lawngreen;
+  border-color: lawngreen;
+}
+*/
+
+#div {
+    @include margenes(1em, 0em);
+}
+
+.btn-nuevo {
+    background-color: $red;
+    color: $green;
+    border-color: $green;
+    width: 100%;
+    border-radius: 0;
+}

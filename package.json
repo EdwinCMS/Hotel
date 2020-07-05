@@ -1,30 +1,32 @@
 {
-  "name": "guia-hoteles",
-  "version": "1.0.0",
-  "description": "Nuestro primer proyecto NodeJS",
-  "main": "index.html",
-  "scripts": {
-    "dev": "lite-server",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://EdwinCMS@bitbucket.org/EdwinCMS/guia-hoteles.git"
-  },
-  "author": "Edwin Moreno",
-  "license": "ISC",
-  "homepage": "https://bitbucket.org/EdwinCMS/guia-hoteles#readme",
-  "devDependencies": {
-    "lite-server": "^2.5.4"
-  },
-  "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.13.1",
-    "@icon/open-iconic": "^1.1.1-alpha.3",
-    "@popperjs/core": "^2.4.2",
-    "bootstrap": "^4.5.0",
-    "flat-icons": "^1.0.0",
-    "jquery": "^3.5.1",
-    "open-iconic": "^1.1.1",
-    "popper.js": "^1.16.1"
-  }
+    "name": "guia-hoteles",
+    "version": "1.0.0",
+    "description": "Nuestro primer proyecto NodeJS",
+    "main": "index.html",
+    "scripts": {
+        "dev": "lite-server",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "scss": "node-sass -o css/ css/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://EdwinCMS@bitbucket.org/EdwinCMS/guia-hoteles.git"
+    },
+    "author": "Edwin Moreno",
+    "license": "ISC",
+    "homepage": "https://bitbucket.org/EdwinCMS/guia-hoteles#readme",
+    "devDependencies": {
+        "lite-server": "^2.5.4",
+        "node-sass": "^4.14.1"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "^5.13.1",
+        "@icon/open-iconic": "^1.1.1-alpha.3",
+        "@popperjs/core": "^2.4.2",
+        "bootstrap": "^4.5.0",
+        "flat-icons": "^1.0.0",
+        "jquery": "^3.5.1",
+        "open-iconic": "^1.1.1",
+        "popper.js": "^1.16.1"
+    }
 }
