@@ -14,7 +14,6 @@
         "imagemin": "imagemin images/* --out-dir dist/images",
         "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin about.html -d dist --htmlmin -o dist/about.html && usemin prices.html -d dist --htmlmin -o dist/prices.html && usemin contact.html -d dist --htmlmin -o dist/contact.html",
         "build": "npm run clean && npm run scss && npm run usemin"
-
     },
     "repository": {
         "type": "git",
@@ -27,6 +26,16 @@
         "copyfile": "^0.1.2",
         "cssmin": "^0.4.3",
         "devtools": "^6.1.23",
+        "grunt": "^1.2.1",
+        "grunt-contrib-clean": "^2.0.0",
+        "grunt-contrib-concat": "^1.0.1",
+        "grunt-contrib-copy": "^1.0.0",
+        "grunt-contrib-cssmin": "^3.0.0",
+        "grunt-contrib-sass": "^1.0.0",
+        "grunt-contrib-uglify": "^4.0.1",
+        "grunt-contrib-watch": "^1.1.0",
+        "grunt-filerev": "^2.3.1",
+        "grunt-usemin": "^3.1.1",
         "htmlmin": "0.0.7",
         "lite-server": "^2.5.4",
         "node-sass": "^4.14.1",
@@ -42,9 +51,13 @@
         "bootstrap": "^4.5.0",
         "concurrently": "^5.2.0",
         "flat-icons": "^1.0.0",
+        "grunt-browser-sync": "^2.2.0",
+        "grunt-contrib-imagemin": "^4.0.0",
         "imagemin": "^7.0.1",
+        "jit-grunt": "^0.10.0",
         "jquery": "^3.5.1",
         "open-iconic": "^1.1.1",
-        "popper.js": "^1.16.1"
+        "popper.js": "^1.16.1",
+        "time-grunt": "^2.0.0"
     }
 }

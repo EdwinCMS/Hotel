@@ -15,7 +15,7 @@ footer {
 
 .card-hotel {
   /* 1 crecimiento, indica flex-grow
-  el segundo parametro indica el ancho*/
+el segundo parametro indica el ancho*/
   flex: 1 150px;
   /*padding: 2px 5px 2px 5px;*/
   margin-top: 1em; }
@@ -61,3 +61,5 @@ footer {
   border-color: #27ba16;
   width: 100%;
   border-radius: 0; }
+
+/*# sourceMappingURL=styles.def2d9614a4c1ed19adf.css.map */
