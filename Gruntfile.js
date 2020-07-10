@@ -42,7 +42,7 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     cwd: './',
-                    src: 'images/*.{png.gif.jpg.jpeg}',
+                    src: 'images/*.{png,gif,jpg,jpeg}',
                     dest: 'dist/'
                 }]
             }
@@ -63,7 +63,7 @@ module.exports = function(grunt) {
                     expand: true,
                     dot: true,
                     cwd: 'node_modules/open-iconic/font',
-                    src: ['fonts/*.*/'],
+                    src: ['fonts/*.*'],
                     dest: 'dist'
                 }]
             }
