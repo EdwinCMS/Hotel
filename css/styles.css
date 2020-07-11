@@ -1,0 +1,63 @@
+.jumbotron {
+  background-color: #ffffff;
+  color: #202120;
+  margin-top: 3.5em;
+  margin-bottom: 0em; }
+
+footer {
+  padding: 1em 1em 1em;
+  background-color: #ffffff;
+  margin-top: 1em;
+  margin-bottom: 0em; }
+
+.center {
+  text-align: center; }
+
+.card-hotel {
+  /* 1 crecimiento, indica flex-grow
+  el segundo parametro indica el ancho*/
+  flex: 1 150px;
+  /*padding: 2px 5px 2px 5px;*/
+  margin-top: 1em; }
+
+.btn-reserva {
+  width: 100%;
+  border-radius: 0; }
+
+.icons-general {
+  padding-right: 10px; }
+
+.card-img {
+  width: 20px;
+  height: 20px; }
+
+#banner {
+  margin-top: 0em;
+  margin-bottom: 1em; }
+
+/*
+#jumbo {
+    @include margenes(0em, 0em);
+}
+*/
+.tab-content {
+  margin-top: 2em;
+  margin-bottom: 0em; }
+
+/*
+#btnModalContact {
+  background-color: white;
+  color: lawngreen;
+  border-color: lawngreen;
+}
+*/
+#div {
+  margin-top: 1em;
+  margin-bottom: 0em; }
+
+.btn-nuevo {
+  background-color: #b32d12;
+  color: #27ba16;
+  border-color: #27ba16;
+  width: 100%;
+  border-radius: 0; }
