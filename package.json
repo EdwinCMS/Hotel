@@ -23,7 +23,7 @@
     "license": "ISC",
     "homepage": "https://bitbucket.org/EdwinCMS/guia-hoteles#readme",
     "devDependencies": {
-        "browser-sync": "^2.26.7",
+        "browser-sync": "^2.27.10",
         "copyfile": "^0.1.2",
         "cssmin": "^0.4.3",
         "devtools": "^6.1.23",
